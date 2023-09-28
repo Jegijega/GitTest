@@ -2,31 +2,20 @@ import stanford.karel.Karel;
 
 public class Problem02 extends Karel{
 	public void run(){
+		
+		for(int i = 0; i < 4; i++){
+			move();
+		}
+		
+		for(int i = 0; i < 10; i++){
+			pickBeeper();
+		}
 		move();
-		move();
-		move();
-		move();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		pickBeeper();
-		move();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
-		putBeeper();
+		
+		for(int i = 0; i < 10; i++){
+			putBeeper();
+		}
+		
 	}
 
 }
