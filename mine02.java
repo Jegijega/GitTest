@@ -53,7 +53,15 @@ public class mine02 extends Karel{
 			}
 		}
 		for(int p = 0; p < 4; p++){
-			for(int i = 0; i < 3; i++){
+			if( p == 0){
+				for(int i = 0; i < 3; i++){
+				}	
+			}
+			if( p > 0){
+				for(int i = 0; i < 4; i++){
+				}	
+			}
+			
 				move();
 			}
 				putBeeper();
