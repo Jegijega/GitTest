@@ -5,7 +5,7 @@ public class mine02 extends Karel{
 		for(int i = 0; i < 4; i++){
 			move();
 		}
-		for(int j = 0; j < 5; j++){
+		for(int j = 0; j < 4; j++){
 			putBeeper();
 			move();
 			putBeeper();
