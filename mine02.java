@@ -33,15 +33,17 @@ public class mine02 extends Karel{
 			move();
 		}
 		for(int j = 0; j < 5; j++){
-			putBeeper();
-			move();
-			putBeeper();
-			turnLeft();
-			move();
-			putBeeper();
-			turnLeft();
-			move();
-			putBeeper();
+			if(j <> 3){
+				putBeeper();
+				move();
+				putBeeper();
+				turnLeft();
+				move();
+				putBeeper();
+				turnLeft();
+				move();
+				putBeeper();
+			}
 			if(j < 4){
 			turnLeft();
 			turnLeft();
