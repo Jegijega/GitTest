@@ -28,5 +28,9 @@ public class mine02 extends Karel{
 		for(int i = 0; i < 4; i++){
 			move();
 		}
+		turnLeft();
+		for(int i = 0; i < 4; i++){
+			move();
+		}
 	}
 }
