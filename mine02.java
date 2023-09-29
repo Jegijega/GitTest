@@ -14,7 +14,7 @@ public class mine02 extends Karel{
 			putBeeper();
 			turnLeft();
 			move();
-			putBeeeper();
+			putBeeper();
 			turnLeft();
 			turnLeft();
 			turnLeft();
