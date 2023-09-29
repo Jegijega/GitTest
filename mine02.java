@@ -5,7 +5,7 @@ public class mine02 extends Karel{
 		for(int i = 0; i < 4; i++){
 			move();
 		}
-		for(int j = 0; j < 4; j++){
+		for(int j = 0; j < 5; j++){
 			putBeeper();
 			move();
 			putBeeper();
@@ -15,6 +15,7 @@ public class mine02 extends Karel{
 			turnLeft();
 			move();
 			putBeeper();
+			if(j < 4){
 			turnLeft();
 			turnLeft();
 			turnLeft();
@@ -22,6 +23,7 @@ public class mine02 extends Karel{
 			turnLeft();
 			turnLeft();
 			turnLeft();
+			}
 		}
 	}
 }
