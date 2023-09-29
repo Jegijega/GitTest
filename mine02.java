@@ -52,25 +52,33 @@ public class mine02 extends Karel{
 				turnLeft();
 			}
 		}
-		for(int i = 0; i < 3; i++){
-			move();
-		}
-		putBeeper();
-		turnLeft();
-		move();
-		putBeeper();
-		move();
-		putBeeper();
-		turnLeft();
-		move();
-		turnLeft();
-		move();
-		putBeeper();
-		turnLeft();
-		move();
-		putBeeper();
-		move();
-		putBeeper();
+		for(int p = 0; p < 4; p++){
+			for(int i = 0; i < 3; i++){
+				move();
+			}
+				putBeeper();
+				turnLeft();
+				move();
+				putBeeper();
+				move();
+				putBeeper();
+				turnLeft();
+				move();
+				turnLeft();
+				move();
+				putBeeper();
+				turnLeft();
+				move();
+				putBeeper();
+				move();
+				putBeeper();
+			
+			turnLeft();
+			for(int i = 0; i < 3; i++){
+				move();
+			}
+	}
+		
 		
 		
 	}
