@@ -10,14 +10,18 @@ public class Problem07 extends Karel{
 				move();
 			}
 			if(facingEast()){
-				putBeeper();
+				if(noBeepersPresent()){
+					putBeeper();
+				}
 				turnLeft();
 				if(frontIsClear()){
 				move();
 				turnLeft();
 				}
 			} else{
-				putBeeper();
+				if(noBeepersPresent()){
+					putBeeper();
+				}
 				turnLeft();
 				turnLeft();
 				turnLeft();
