@@ -74,5 +74,6 @@ public class mine03 extends SuperKarel {
 					}
 			}
 		}	
+		turnRight();
 	}
 }
