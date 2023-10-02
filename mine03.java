@@ -2,40 +2,40 @@ import stanford.karel.SuperKarel;
 
 public class mine03 extends SuperKarel {
 	public void run(){	
-		int h=1, w=1;
+		int n=1, e=1;
 		
-		while(h < 10 || w < 10){
+		while(n < 10 || e < 10){
 			for(int i = 0; i < 3; i++){
 				if(rightIsClear()){
 					turnRight();
 					move();
 					if(facingNorth()){
-						h++;
+						n++;
 					}
 					if(facingSouth()){
-						h--;
+						n--;
 					}
 					if(facingEast()){
-						w++;
+						e++;
 					}
 					if(facingWest()){
-						w--;
+						e--;
 					}
 					break;
 				}
 				if(frontIsClear()){
 					move();
 					if(facingNorth()){
-						h++;
+						n++;
 					}
 					if(facingSouth()){
-						h--;
+						n--;
 					}
 					if(facingEast()){
-						w++;
+						e++;
 					}
 					if(facingWest()){
-						w--;
+						e--;
 					}
 					break;
 				}
@@ -43,16 +43,16 @@ public class mine03 extends SuperKarel {
 					turnLeft();
 					move();
 					if(facingNorth()){
-						h++;
+						n++;
 					}
 					if(facingSouth()){
-						h--;
+						n--;
 					}
 					if(facingEast()){
-						w++;
+						e++;
 					}
 					if(facingWest()){
-						w--;
+						e--;
 					}
 					break;
 				} else{
@@ -60,16 +60,16 @@ public class mine03 extends SuperKarel {
 					turnLeft();
 					move();
 					if(facingNorth()){
-						h++;
+						n++;
 					}
 					if(facingSouth()){
-						h--;
+						n--;
 					}
 					if(facingEast()){
-						w++;
+						e++;
 					}
 					if(facingWest()){
-						w--;
+						e--;
 					}
 					}
 			}
