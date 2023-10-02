@@ -7,6 +7,7 @@ public class Problem07 extends Karel{
 				if(noBeepersPresent()){
 					putBeeper();
 				}
+				move();
 			}
 			if(facingEast()){
 				turnLeft();
