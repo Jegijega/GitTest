@@ -24,6 +24,7 @@ public class Problem11 extends SuperKarel {
 					move();
 					}
 			}
+		}	
 			
 		if(facingNorth()){
 		turnRight();
