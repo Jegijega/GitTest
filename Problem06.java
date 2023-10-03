@@ -8,7 +8,8 @@ public class Problem06 extends Karel{
 		n++;
 		pickBeeper();
 	}
-	while(beepersInBag()){
+	for(int j = 0; j < n; j++){
+
 		putBeeper();
 	}
 	move();
@@ -16,7 +17,7 @@ public class Problem06 extends Karel{
 		m++;
 		pickBeeper();
 	}
-	while(beepersInBag()){
+	for(int j = 0; j < m; j++){
 		putBeeper();
 	}
 	move();
