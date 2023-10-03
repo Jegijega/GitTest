@@ -74,6 +74,8 @@ public class Problem11 extends SuperKarel {
 					}
 			}
 		}	
+		if(facingNorth()){
 		turnRight();
+		}
 	}
 }
