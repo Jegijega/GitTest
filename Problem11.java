@@ -10,7 +10,6 @@ public class Problem11 extends SuperKarel {
 					move();
 					break;
 					}
-				}
 				if(frontIsClear()){
 					move();
 					break;
