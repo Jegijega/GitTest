@@ -9,67 +9,28 @@ public class Problem11 extends SuperKarel {
 				if(rightIsClear()){
 					turnRight();
 					move();
-					if(facingNorth()){
-						n++;
+					if(beepersPresent()){
+						break;
 					}
-					if(facingSouth()){
-						n--;
-					}
-					if(facingEast()){
-						e++;
-					}
-					if(facingWest()){
-						e--;
-					}
-					break;
 				}
 				if(frontIsClear()){
 					move();
-					if(facingNorth()){
-						n++;
+					if(beepersPresent()){
+						break;
 					}
-					if(facingSouth()){
-						n--;
-					}
-					if(facingEast()){
-						e++;
-					}
-					if(facingWest()){
-						e--;
-					}
-					break;
 				}
 				if(leftIsClear()){
 					turnLeft();
 					move();
-					if(facingNorth()){
-						n++;
+					if(beepersPresent()){
+						break;
 					}
-					if(facingSouth()){
-						n--;
-					}
-					if(facingEast()){
-						e++;
-					}
-					if(facingWest()){
-						e--;
-					}
-					break;
 				} else{
 					turnLeft();
 					turnLeft();
 					move();
-					if(facingNorth()){
-						n++;
-					}
-					if(facingSouth()){
-						n--;
-					}
-					if(facingEast()){
-						e++;
-					}
-					if(facingWest()){
-						e--;
+					if(beepersPresent()){
+						break;
 					}
 					}
 			}
@@ -78,4 +39,5 @@ public class Problem11 extends SuperKarel {
 		turnRight();
 		}
 	}
+	
 }
