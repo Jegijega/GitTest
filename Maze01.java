@@ -1,6 +1,6 @@
 import stanford.karel.SuperKarel;
 
-public class mine03 extends SuperKarel {
+public class Maze01 extends SuperKarel {
 	public void run(){	
 		int n=1, e=1;
 		
@@ -74,6 +74,8 @@ public class mine03 extends SuperKarel {
 					}
 			}
 		}	
-		turnRight();
+		if(facingNorth()){
+			turnRight();
+			}
 	}
 }
