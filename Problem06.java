@@ -6,11 +6,12 @@ public class Problem06 extends Karel{
 	while(beepersPresent()){
 		plusN();
 	}
+	takingBackN();
 	move();
 	while(beepersPresent()){
 		plusM();
 	}
-	takingBackN();
+
 	}
 	
 	private void plusN(){
@@ -19,15 +20,11 @@ public class Problem06 extends Karel{
 		move();
 		putBeeper();
 		turnLeft();
-		turnLeft();
-		move();
 		move();
 		turnLeft();
-		turnLeft();
-		turnLeft();
+		move();
 		move();
 		putBeeper();
-		turnLeft();
 		turnLeft();
 		move();
 		turnLeft();
@@ -55,17 +52,15 @@ public class Problem06 extends Karel{
 	private void takingBackN(){
 		turnLeft();
 		move();
-		turnLeft();
-		move();
 		while(beepersPresent()){
 			pickBeeper();
+			turnLeft();
 			turnLeft();
 			move();
 			putBeeper();
 			turnLeft();
 			turnLeft();
 			move();
-			turnLeft();
 		}
 	}
 }
