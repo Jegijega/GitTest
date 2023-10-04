@@ -24,6 +24,14 @@ public class Problem06 extends Karel{
 		move();
 		turnLeft();
 		turnLeft();
+		turnLeft();
+		move();
+		putBeeper();
+		turnLeft();
+		turnLeft();
+		move();
+		turnLeft();
+	
 	}
 	private void plusM(){
 		pickBeeper();
