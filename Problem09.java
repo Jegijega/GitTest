@@ -5,7 +5,9 @@ public class Problem09 extends Karel{
 		move();
 		while(beepersPresent()){
 			move();
-			plusM();
+			while(beepersPresent()){
+				plusM();
+			}
 			takingBackM();
 		}
 	}
