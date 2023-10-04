@@ -9,6 +9,16 @@ public class Problem09 extends Karel{
 				plusM();
 			}
 			takingBackM();
+			turnLeft();
+			move();
+			turnLeft();
+			move();
+			move();
+			putBeeper();
+			turnLeft();
+			move();
+			pickBeeper();
+			turnLeft();
 		}
 	}
 	private void plusN(){
