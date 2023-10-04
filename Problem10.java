@@ -2,28 +2,88 @@ import stanford.karel.Karel;
 
 public class Problem10 extends Karel{
 	public void run(){
-	int n=0, m=0;
 	move();
 	while(beepersPresent()){
-		n++;
-		pickBeeper();
+		plusN();
 	}
-	for(int j = 0; j < n; j++){
-
-		putBeeper();
-	}
+	takingBackN();
 	move();
 	while(beepersPresent()){
-		m++;
+		plusM();
+	}
+	takingBackM();
+	}
+	
+	private void plusN(){
 		pickBeeper();
-	}
-	for(int j = 0; j < m; j++){
-		putBeeper();
-	}
-	move();
-		for(int i = 0; i < n/m; i++)
-	putBeeper();
-
 		move();
+		move();
+		putBeeper();
+		turnLeft();
+		move();
+		turnLeft();
+		move();
+		move();
+		putBeeper();
+		turnLeft();
+		move();
+		turnLeft();
+	
+	}
+	
+	private void plusM(){
+		pickBeeper();
+		move();
+		putBeeper();
+		turnLeft();
+		turnLeft();
+		move();
+		turnLeft();
+		turnLeft();
+		turnLeft();
+		move();
+		putBeeper();
+		turnLeft();
+		turnLeft();
+		move();
+		turnLeft();
+	}
+	
+	private void takingBackN(){
+		turnLeft();
+		move();
+		while(beepersPresent()){
+			pickBeeper();
+			turnLeft();
+			turnLeft();
+			move();
+			putBeeper();
+			turnLeft();
+			turnLeft();
+			move();
+		}
+		turnLeft();
+		turnLeft();
+		move();
+		turnLeft();
+	}
+	
+	private void takingBackM(){
+		turnLeft();
+		move();
+		while(beepersPresent()){
+			pickBeeper();
+			turnLeft();
+			turnLeft();
+			move();
+			putBeeper();
+			turnLeft();
+			turnLeft();
+			move();
+		}
+		turnLeft();
+		turnLeft();
+		move();
+		turnLeft();
 	}
 }
