@@ -33,6 +33,7 @@ public class Problem06 extends Karel{
 		turnLeft();
 	
 	}
+	
 	private void plusM(){
 		pickBeeper();
 		move();
@@ -49,5 +50,9 @@ public class Problem06 extends Karel{
 		turnLeft();
 		move();
 		turnLeft();
+	}
+	
+	private void takingBackN(){
+		
 	}
 }
