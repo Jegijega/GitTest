@@ -11,7 +11,7 @@ public class Problem06 extends Karel{
 	while(beepersPresent()){
 		plusM();
 	}
-
+	takingBackM();
 	}
 	
 	private void plusN(){
