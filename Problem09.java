@@ -19,6 +19,7 @@ public class Problem09 extends Karel{
 			pickBeeper();
 			turnLeft();
 		}
+		takingBackN();
 	}
 	private void plusN(){
 		pickBeeper();
