@@ -63,7 +63,7 @@ public class Problem06 extends Karel{
 			move();
 			putBeeper();
 			turnLeft();
-			turnLeft()
+			turnLeft();
 			move();
 			turnLeft();
 		}
