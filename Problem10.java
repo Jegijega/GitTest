@@ -10,7 +10,9 @@ public class Problem10 extends Karel{
 				moveBack();
 				pickBeeper();
 				move();
+				countBeepersOnTop();
 			}
+			bringBackBeepers();
 			move();
 			putBeeper();
 			moveBack();
@@ -22,6 +24,34 @@ public class Problem10 extends Karel{
 		turnLeft();
 		move();
 		turnLeft();
+		turnLeft();
+	}
+	
+	private void countBeepersOnTop(){
+		turnLeft();
+		move();
+		turnLeft();
+		turnLeft();
+		putBeeper();
+		move();
+		turnLeft();
+	}
+	private void bringBackBeepers(){
+		turnLeft();
+		move();
+		while(beepersPresent()){
+			turnLeft();
+			turnLeft();
+			pickBeeper();
+			move();
+			putBeeper();
+			turnLeft();
+			turnLeft();
+			move();
+		}
+		turnLeft();
+		turnLeft();
+		move();
 		turnLeft();
 	}
 }	
