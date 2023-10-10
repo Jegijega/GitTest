@@ -17,6 +17,7 @@ public class Problem12 extends GraphicsProgram{
 		add(myRect, 300, 150);
 		
 		myRect.setFilled(true);
+		myRect.setColour(Colour.GREEN);
 	}
 
 }
