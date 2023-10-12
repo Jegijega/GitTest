@@ -23,7 +23,7 @@ public class Problem12 extends GraphicsProgram{
 			double x; 
 			int y = (int) (getHeight() - HOUSE_HEIGHT + WINDOW_HEIGHT / 3);
 			if(i == 0){
-				x = getWidth() / 2 - HOUSE_WIDTH / 2 + WINDOW_WIDTH / 4;
+				x = getWidth() / 2 - HOUSE_WIDTH / 2 + WINDOW_WIDTH / 6;
 			}else {
 				x = getWidth() / 2 - HOUSE_WIDTH / 2 + WINDOW_WIDTH * 3 / 2;
 			}
