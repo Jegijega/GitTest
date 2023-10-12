@@ -24,3 +24,4 @@ public class Problem12 extends GraphicsProgram{
 		double y = getHeight() - HOUSE_HEIGHT;
 	}
 
+}
