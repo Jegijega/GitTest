@@ -1,15 +1,17 @@
-import java.awt.Color;
-
-import acm.graphics.*;
+import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class Problem12 extends GraphicsProgram{
 	public void run(){
-
-		GRect myRect = new GRect(200, 200);
-		add(myRect, 300, 150);
+		int width = 100;
+		width = width + 20;
+		width = 200;
 		
-		
+		GRect rect = new GRect(width, width, width, width);
+		add(rect);
 	}
 
+	private void testVoid(){
+		
+	}
 }
