@@ -19,7 +19,7 @@ public class Problem12 extends GraphicsProgram{
 	}
 	
 	private void drawWall(){
-		GRect wall = new Grect(HOUSE_WIDTH,HOUSE_HEIGHT);
+		GRect wall = new GRect(HOUSE_WIDTH,HOUSE_HEIGHT);
 		double x;
 		double y = getHeight() - HOUSE_HEIGHT;
 	}
