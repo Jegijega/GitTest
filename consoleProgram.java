@@ -6,5 +6,7 @@ public class consoleProgram extends ConsoleProgram {
 		println(reader);
 		String num1 = readLine("Enter number");
 		println(num1);
+		
+		int firstNum = readInt("Enter first number: ")
 	}
 }
