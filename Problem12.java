@@ -23,10 +23,4 @@ public class Problem12 extends GraphicsProgram{
 		double x;
 		double y = getHeight() - HOUSE_HEIGHT;
 	}
-	
-	private void drawMidLine(){
-		double x1 = 0, y1 = getHeight() / 2, x2 = getWidth(), y2 = y1;
-		GLine line = new GLine(x1, y1, x2, y2);
-		add(line);
-	}
-}
+
