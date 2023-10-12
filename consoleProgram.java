@@ -1,4 +1,7 @@
+import acm.program.ConsoleProgram;
 
-public class consoleProgram {
-
+public class consoleProgram extends ConsoleProgram {
+	public void run() {
+		int reader = readInt();
+	}
 }
