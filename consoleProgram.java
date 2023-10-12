@@ -7,6 +7,6 @@ public class consoleProgram extends ConsoleProgram {
 		String num1 = readLine("Enter number");
 		println(num1);
 		
-		int firstNum = readInt("Enter first number: ")
+		int firstNum = readInt("Enter first number: ");
 	}
 }
