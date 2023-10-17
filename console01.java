@@ -1,4 +1,5 @@
+import acm.program.ConsoleProgram;
 
-public class console01 {
+public class console01 extends ConsoleProgram{
 
 }
