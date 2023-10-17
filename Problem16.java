@@ -6,7 +6,7 @@ public class Problem16 extends ConsoleProgram{
 		double b = readInt("enter second number");
 		double c = readInt("enter third number");
 		
-		int harm = 1 / (1 / a + 1 / b + 1 / c);
+		double harm = 1 / (1 / a + 1 / b + 1 / c);
 		
 		println(harm);
 	}
