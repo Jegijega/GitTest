@@ -11,7 +11,5 @@ public class Problem18 extends ConsoleProgram{
 //		}
 		int c = Math.max(a,b);
 		println(c);
-		int[] array= new int[10];
-		println (array);
 	}
 }
