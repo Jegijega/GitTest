@@ -6,8 +6,8 @@ public class Problem14 extends GraphicsProgram{
 	private static final double FACE_HEIGHT = 200;
 	private static final double EYE_WIDTH = 50;
 	private static final double EYE_HEIGHT = 50;
-	private static final double MOUTH_WIDTH = 50;
-	private static final double MOUTH_HEIGHT = 75;
+	private static final double MOUTH_WIDTH = 100;
+	private static final double MOUTH_HEIGHT = 50;
 	
 	public void run(){
 		drawHead();
