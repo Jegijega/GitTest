@@ -12,6 +12,7 @@ public class Problem14 extends GraphicsProgram{
 	public void run(){
 		drawHead();
 		drawEyes();
+		drawMouth();
 	}
 	
 	private void drawHead(){
