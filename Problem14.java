@@ -30,6 +30,6 @@ public class Problem14 extends GraphicsProgram{
 	
 	private void drawMouth(){
 		GRect mouth = new GRect(MOUTH_WIDTH, MOUTH_HEIGHT);
-		add(mouth, getWidth() / 2 - MOUTH_WIDTH / 2, getHeight() / 2 + FACE_HEIGHT / 2 - MOUTH_HEIGHT);
+		add(mouth, getWidth() / 2 - MOUTH_WIDTH / 2, getHeight() / 2 + FACE_HEIGHT / 2 - MOUTH_HEIGHT - 20);
 	}
 }
