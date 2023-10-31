@@ -21,6 +21,7 @@ public class Problem12 extends GraphicsProgram{
 		double x = getWidth() / 2 - HOUSE_WIDTH / 2;
 		double y = getHeight() - HOUSE_HEIGHT;
 		GLine roof = new GLine(x, y, getWidth() / 2, getHeight() - HOUSE_HEIGHT - 50);
+		add(roof);
 	}
 	
 	
