@@ -14,7 +14,6 @@ public class Problem12 extends GraphicsProgram{
 	private void drawHouse(){
 		drawWall();
 		drawRoof();
-		//drawDoor();
 		}
 	
 	private void drawRoof(){
