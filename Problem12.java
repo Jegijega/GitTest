@@ -20,9 +20,9 @@ public class Problem12 extends GraphicsProgram{
 	private void drawRoof(){
 		double x = getWidth() / 2 - HOUSE_WIDTH / 2;
 		double y = getHeight() - HOUSE_HEIGHT;
-		GLine roof1 = new GLine(getWidth() / 2 - HOUSE_WIDTH / 2, getHeight() - HOUSE_HEIGHT , getWidth() / 2, getHeight() - HOUSE_HEIGHT - 50);
+		GLine roof1 = new GLine(getWidth() / 2 - HOUSE_WIDTH / 2, getHeight() - HOUSE_HEIGHT , getWidth() / 2, getHeight() - HOUSE_HEIGHT - 150);
 		add(roof1);
-		GLine roof2 = new GLine(getWidth() / 2 + HOUSE_WIDTH / 2, getHeight() - HOUSE_HEIGHT, getWidth() / 2, getHeight() - HOUSE_HEIGHT - 50);
+		GLine roof2 = new GLine(getWidth() / 2 + HOUSE_WIDTH / 2, getHeight() - HOUSE_HEIGHT, getWidth() / 2, getHeight() - HOUSE_HEIGHT - 150);
 		add(roof2);
 	}
 	
