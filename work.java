@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class work extends ConsoleProgram {
 	public void run(){
-	int a = 0;
-	println(5 + 5);
+	int a = readInt("shemoitane cvladi ");
+	println(a + 5);
 	}
 }
