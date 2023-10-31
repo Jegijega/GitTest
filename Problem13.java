@@ -5,3 +5,4 @@ public class Problem13 extends GraphicsProgram{
 		double h = getHeight() / 2;
 	}
 }
+
