@@ -4,8 +4,8 @@ import acm.program.GraphicsProgram;
 public class Problem14 extends GraphicsProgram{
 	private static final double FACE_WIDTH = 200;
 	private static final double FACE_HEIGHT = 200;
-	private static final double EYE_WIDTH = 200;
-	private static final double EYE_HEIGHT = 200;
+	private static final double EYE_WIDTH = 50;
+	private static final double EYE_HEIGHT = 50;
 	public void run(){
 		drawHead();
 		drawEyes();
@@ -17,6 +17,7 @@ public class Problem14 extends GraphicsProgram{
 	}
 	
 	private void drawEyes(){
-		
+		GRect eye1 = new GRect(FACE_WIDTH,FACE_HEIGHT);
+		add(eye1, getWidth() / 2 - FACE_WIDTH / 2 + 25, getHeight() / 2 - FACE_HEIGHT / 2);
 	}
 }
