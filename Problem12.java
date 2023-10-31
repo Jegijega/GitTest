@@ -13,24 +13,14 @@ public class Problem12 extends GraphicsProgram{
 	
 	private void drawHouse(){
 		drawWall();
-		drawWindows();
-		//drawRoof();
+		drawRoof();
 		//drawDoor();
 		}
 	
-	private void drawWindows(){
+	private void drawRoof(){
 		for(int i = 0; i < 2; i++){
 			double x; 
-			int y = (int) (getHeight() - HOUSE_HEIGHT + WINDOW_HEIGHT / 3);
-			if(i == 0){
-				x = getWidth() / 2 - HOUSE_WIDTH / 2 + WINDOW_WIDTH / 6;
-			}else {
-				x = getWidth() / 2 + HOUSE_WIDTH / 2 - WINDOW_WIDTH / 3;
-			}
 			
-			GRect window = new GRect (WINDOW_WIDTH / 6, WINDOW_HEIGHT / 6);
-			add(window, x, y);
-		}
 	}
 	
 	
