@@ -19,8 +19,7 @@ public class Problem12 extends GraphicsProgram{
 	
 	private void drawRoof(){
 		for(int i = 0; i < 2; i++){
-			double x; 
-			
+		
 	}
 	
 	
