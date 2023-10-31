@@ -13,7 +13,7 @@ public class Problem14 extends GraphicsProgram{
 	
 	private void drawHead(){
 		GRect head = new GRect(FACE_WIDTH,FACE_HEIGHT);
-		add(head, getWidth() / 2 - FACE_WIDTH / 2, getHeight() - FACE_HEIGHT);
+		add(head, getWidth() / 2 - FACE_WIDTH / 2, getHeight() / 2 - FACE_HEIGHT / 2);
 	}
 	
 	private void drawEyes(){
