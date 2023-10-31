@@ -18,8 +18,9 @@ public class Problem12 extends GraphicsProgram{
 		}
 	
 	private void drawRoof(){
-		for(int i = 0; i < 2; i++){
-		}
+		double x = getWidth() / 2 - HOUSE_WIDTH / 2;
+		double y = getHeight() - HOUSE_HEIGHT;
+		GLine roof = new GLine(x, y, getWidth() / 2, getHeight() - HOUSE_HEIGHT - 50);
 	}
 	
 	
