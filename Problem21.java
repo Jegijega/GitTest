@@ -9,7 +9,9 @@ public class Problem21 extends GraphicsProgram{
 	}
 	
 	private void drawingLines(double X){
-		GLine line = new GLine(X * getWidth() / 9, 0 , X * getWidth() / 9, getHeight());
-		add (line);
+		GLine lineY = new GLine(X * getWidth() / 9, 0, X * getWidth() / 9, getHeight());
+		add (lineY);
+		GLine lineX = new GLine(0, X * getHeight() / 9, getWidth(),  X * getHeight() / 9);
+		add (lineX);
 	}
 }
