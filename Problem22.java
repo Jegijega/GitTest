@@ -8,7 +8,7 @@ public class Problem22 extends GraphicsProgram{
 	public void run(){
 		double squareX = getWidth() / 8;
 		double squareY = getHeight() / 8;
-		for(int j = 0; j < 4; j++){	
+		for(int j = 0; j < 8; j += 2){	
 			for(int i = 0; i < 4; i++){
 				drawSquareB(squareX,squareY, i, j);
 				//drawSquareW();
