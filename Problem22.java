@@ -1,3 +1,6 @@
+
+import java.awt.*;
+
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
@@ -16,5 +19,8 @@ public class Problem22 extends GraphicsProgram{
 	private void drawSquareB(double squareX, double squareY, int X, int Y){
 		GRect rect = new GRect(squareX,squareY);
 		add(rect, squareX * 2 * X, squareY * Y);
+		rect.setFilled(true);
+		rect.setColor(Color.BLACK);
+		
 	}
 }
