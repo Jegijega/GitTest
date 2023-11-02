@@ -11,7 +11,6 @@ public class Problem22 extends GraphicsProgram{
 		for(int j = 0; j < 8; j += 2){	
 			for(int i = 0; i < 4; i++){
 				drawSquareB(squareX,squareY, i, j);
-				//drawSquareW();
 			}
 		}	
 	}
