@@ -4,8 +4,8 @@ import acm.program.ConsoleProgram;
 import acm.util.RandomGenerator;
 
 public class work extends ConsoleProgram {
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run(){
-		Random rand1 = new Random();
-		println(rand1);
+		println(rgen);
 	}
 }
