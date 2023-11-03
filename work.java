@@ -10,7 +10,6 @@ public class work extends ConsoleProgram {
 	
 	private double phitag(int numA, int numB){
 		double numC = Math.sqrt(numA*numA+numB*numB);
-		println("sakbfakj");
 		return numC;
 		
 	}
