@@ -1,8 +1,9 @@
 import acm.program.ConsoleProgram;
+import acm.util.RandomGenerator;
 
 public class work extends ConsoleProgram {
 	public void run(){
-	int a = readInt("shemoitane cvladi ");
-	println(a + 5);
+		RandomGenerator rand1 = new RandomGenerator();
+		println(rand1);
 	}
 }
