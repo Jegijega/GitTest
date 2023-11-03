@@ -1,12 +1,17 @@
-
-import acm.program.ConsoleProgram;
-import acm.util.RandomGenerator;
-
+import acm.program.*;
 
 public class work extends ConsoleProgram {
-	private RandomGenerator rgen = RandomGenerator.getInstance();
-	public void run(){
-		double x = rgen.nextDouble(7.5, 8.5);
-		println(x);
+	public void run() {
+		println("Enter values to compute Pythagorean theorem.");
+		int numA = readInt("a: ");
+		int numB = readInt("b: ");
+		println("c = " + phitag(numA, numB));
+	}
+	
+	private double phitag(int numA, int numB){
+		double numC = Math.sqrt(numA*numA+numB*numB);
+		println("sakbfakj");
+		return numC;
+		
 	}
 }
