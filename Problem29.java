@@ -12,7 +12,7 @@ public class Problem29 extends ConsoleProgram{
 		int count1 = 1;
 		int count2 = 1;
 		int count = 0;
-		if(n < 3){
+		if(n >= 3){
 			for(int i = 3; i <= n; i++){
 				count = count1 + count2;
 				count1 = count2;
