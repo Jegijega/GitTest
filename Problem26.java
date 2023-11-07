@@ -15,7 +15,7 @@ public class Problem26 extends ConsoleProgram{
 			if(n % gcd == 0 && m % gcd == 0){
 				return gcd;
 			}
-			gcd++;
+			gcd--;
 		}
 		return 1;
 	}
