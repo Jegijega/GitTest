@@ -5,7 +5,8 @@ import acm.program.ConsoleProgram;
 public class Problem28 extends ConsoleProgram{
 	public void run(){
 		int n = 0;
-		countEvens(n);
+		println(countEvens(n));
+		
 	}
 
 	private int countEvens (int n) {
