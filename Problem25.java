@@ -10,7 +10,7 @@ public class Problem25 extends ConsoleProgram{
 	}
 
 	private int lcm(int n, int m) {
-		int lcm = 0;
+		int lcm = 1;
 		while(lcm < n * m){
 			if(lcm % n == 0 && lcm % m == 0){
 				return lcm;
