@@ -15,6 +15,7 @@ public class Problem25 extends ConsoleProgram{
 			if(lcm % n == 0 && lcm % m == 0){
 				return lcm;
 			}
+			lcm++;
 		}
 		return n * m;
 	}
