@@ -2,15 +2,8 @@ import acm.program.*;
 
 public class work extends ConsoleProgram {
 	public void run() {
-		println("Enter values to compute Pythagorean theorem.");
-		int numA = readInt("a: ");
-		int numB = readInt("b: ");
-		println("c = " + phitag(numA, numB));
+		//if(ball.getY() + BALL_RADIUS * 2 >= paddle.getY() && ball.getY() + BALL_RADIUS * 2 <= paddle.getY() + 1 && ball.getX() + BALL_RADIUS >= paddle.getX() && ball.getX() + BALL_RADIUS <= paddle.getX() + PADDLE_WIDTH ){
+		//	vy = -vy;
+		}
 	}
 	
-	private double phitag(int numA, int numB){
-		double numC = Math.sqrt(numA*numA+numB*numB);
-		return numC;
-		
-	}
-}
