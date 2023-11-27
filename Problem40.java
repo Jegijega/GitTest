@@ -14,6 +14,7 @@ public class Problem40 extends GraphicsProgram{
 				ball.move(2, 0);
 				pause(5);	
 			}
+			ball.setColor(Color.RED);
 			//ball.setLocation(getWidth() - 2 * RAD, getHeight() / 2 - RAD);
 			while(ball.getX() > 0){
 				ball.setColor(Color.GREEN);
