@@ -6,7 +6,7 @@ import acm.program.GraphicsProgram;
 public class Problem43 extends GraphicsProgram {
 	private GOval oval = null;
 	public void run() {
-		oval = new GOval(30, 30);
+		oval = new GOval(100, 100);
 		oval.setFilled(true);
 		oval.setColor(Color.GREEN);
 		add (oval, getWidth() / 2, getHeight() / 2);
