@@ -20,7 +20,6 @@ public class Problem36 extends ConsoleProgram{
 				sum++;
 			}
 		}
-		println(sum);
 		println((double)sum / n);
 	}
 }
