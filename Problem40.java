@@ -13,7 +13,7 @@ public class Problem40 extends GraphicsProgram{
 				pause(5);	
 			}
 			while(ball.getX() > 0){
-				ball.move(-2,  0);
+				ball.move(-2, 0);
 				pause(5);
 			}
 		}		
