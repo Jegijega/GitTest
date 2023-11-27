@@ -40,7 +40,7 @@ public class Problem43 extends GraphicsProgram {
 	}
 
 	private void initBall() {
-		GOval ball = new GOval(30, 30);
+		GOval ball = new GOval(50, 50);
 		ball.setFilled(true);
 		add(ball);
 	}
