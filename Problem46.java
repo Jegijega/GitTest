@@ -6,8 +6,8 @@ public class Problem46 extends ConsoleProgram {
 		int max = 0;
 		char maxchar = ' ';
 		for(int j = 0; j < word.length(); j++){
+			int counter = 0;
 			for(int i = 0; i < word.length(); i++){
-				int counter = 0;
 				if(word.charAt(i) == word.charAt(j)){
 					counter++;
 				}
