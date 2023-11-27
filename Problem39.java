@@ -7,7 +7,7 @@ public class Problem39 extends GraphicsProgram{
 		GOval ball = new GOval(2 * RAD, 2 * RAD);
 		ball.setFilled(true);
 		add(ball, 0, getHeight() / 2 - RAD);
-		while(ball.getX()< getWidth() - 2 * RAD){
+		while(ball.getX() < getWidth() - 2 * RAD){
 			ball.move(2, 0);
 			pause(5);
 		}
