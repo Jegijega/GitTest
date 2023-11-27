@@ -11,13 +11,13 @@ public class Problem40 extends GraphicsProgram{
 		add(ball, 0, getHeight() / 2 - RAD);
 		while(true){	
 			while(ball.getX() + 2 * RAD < getWidth()){
-				ball.move(10, 0);
 				pause(5);
+				ball.move(10, 0);
 			}
 			ball.setLocation(getWidth() - 2 * RAD, getHeight() / 2 - RAD);
 			while(ball.getX() > 0){
-				ball.move(-10, 0);
 				pause(5);
+				ball.move(-10, 0);
 			}
 		}
 	}
