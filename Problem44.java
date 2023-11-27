@@ -6,8 +6,9 @@ import acm.program.GraphicsProgram;
 public class Problem44 extends GraphicsProgram{
 	private GOval ball = null;
 	public void run(){
-		ball = new GOval(50, 50);
 		addMouseListeners();
+		ball = new GOval(50, 50);
+		ball.setFilled(true);
 		add(ball, -50, 0);
 		while(true){
 			ball.move(0, 5);
