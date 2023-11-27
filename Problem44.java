@@ -16,6 +16,6 @@ public class Problem44 extends GraphicsProgram{
 	}
 	
 	public void mouseClicked(MouseEvent e){
-		ball.setLocation(e.getX() + 25, e.getY() + 25);
+		ball.setLocation(e.getX() - 25, e.getY() - 25);
 	}
 }
