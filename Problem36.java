@@ -10,7 +10,7 @@ public class Problem36 extends ConsoleProgram{
 		int sum = 0;
 		for(int i = 0; i < n; i++){
 			int tries = 0;
-			while(tries == 3){
+			while(tries < 3){
 				boolean lep = rgen.nextBoolean();
 				if(lep){
 					tries++;
