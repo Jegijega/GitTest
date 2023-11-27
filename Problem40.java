@@ -10,7 +10,7 @@ public class Problem40 extends GraphicsProgram{
 		ball.setFilled(true);
 		add(ball, 0, getHeight() / 2 - RAD);
 		while(true){	
-			while(ball.getX() < getWidth() - 2 * RAD){
+			while(ball.getX() <= getWidth() - 2 * RAD){
 				ball.move(10, 0);
 				pause(5);	
 			}
