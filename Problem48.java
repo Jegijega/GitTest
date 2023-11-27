@@ -8,7 +8,7 @@ public class Problem48 extends ConsoleProgram{
 			int ans = 0;
 			for(int j = 0; j < word.length(); j++){
 				if(word.charAt(i) == ch){
-				ans++;	
+				ans++;
 				}
 			}
 			println(ch + " " + ans);	
