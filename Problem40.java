@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
@@ -14,6 +16,7 @@ public class Problem40 extends GraphicsProgram{
 			}
 			//ball.setLocation(getWidth() - 2 * RAD, getHeight() / 2 - RAD);
 			while(ball.getX() > 0){
+				ball.setColor(Color.GREEN);
 				ball.move(-2, 0);
 				pause(5);
 			}
