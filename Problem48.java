@@ -7,12 +7,11 @@ public class Problem48 extends ConsoleProgram{
 			char ch = (char)('a' + i);
 			int ans = 0;
 			for(int j = 0; j < word.length(); j++){
-				if(word.charAt(i) == ch){
+				if(word.charAt(j) == ch){
 				ans++;
 				}
 			}
 			println(ch + " " + ans);	
 		}
 	}
-
 }
