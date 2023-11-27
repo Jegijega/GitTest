@@ -6,8 +6,8 @@ public class Problem35 extends ConsoleProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 	public void run(){
-		double n = readInt("Enter amount ");
-		double sum = 0;
+		int n = readInt("Enter amount ");
+		int sum = 0;
 		for(int i = 0; i < n; i++){
 			boolean lep = false;
 			while(lep == false){
@@ -15,6 +15,6 @@ public class Problem35 extends ConsoleProgram{
 				sum++;
 			}
 		}
-		println(sum / n);
+		println((double)sum / n);
 	}
 }
