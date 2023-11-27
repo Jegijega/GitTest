@@ -33,9 +33,9 @@ public class Problem43 extends GraphicsProgram {
 	public void mousePressed(MouseEvent e) {
 		object = getElementAt(e.getX(), e.getY());
 		if (object == null) {
-			println("null");
+			println("nullia");
 		} else {
-			println("!null");
+			println("ar ari null");
 		}
 	}
 
