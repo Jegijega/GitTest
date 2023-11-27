@@ -16,8 +16,8 @@ public class Problem46 extends ConsoleProgram {
 					maxchar = word.charAt(j);
 				}
 			}
+		}	
 		println(maxchar);
 		println(max);
-		}	
 	}
 }
