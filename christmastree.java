@@ -18,12 +18,9 @@ public class christmastree extends GraphicsProgram {
 	}
 	private void drawLefthalf() {
 		for (int i = 0; i < N_OF_BRANCH; i++) {
-			GLine line1 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - DIF_BRANCH * i, 
-					getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH + BRANCH_WIDTH_DIF * i , getHeight() - WOOD_HEIGHT - FIRST_BRANCH_HEIGHT * i + DIF_BRANCH * i);
-			add (line1);
-			GLine line2 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH + BRANCH_WIDTH_DIF * i , getHeight() - WOOD_HEIGHT - FIRST_BRANCH_HEIGHT + DIF_BRANCH * i,
-					getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - FIRST_BRANCH_HEIGHT - FIRST_BRANCH_HEIGHT - FIRST_BRANCH_HEIGHT * i + DIF_BRANCH * i);
-			add (line2);
+			GLine line1 = new GLine (getWidth() / 2 - WOOD_WIDTH /2, getHeight() - WOOD_HEIGHT - DIF_BRANCH * i,
+					getWidth() / 2 + WOOD_WIDTH / 2 + BRANCH_WIDTH_DIF * i, getHeight() - WOOD_HEIGHT - DIF_BRANCH * i);
+					add (line1);	
 		}
 	}
 	private void drawWood() {
@@ -33,3 +30,22 @@ public class christmastree extends GraphicsProgram {
 		woody.setColor(Color.MAGENTA);
 		}
 }
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*	for (int i = 0; i < N_OF_BRANCH; i++) {
+	GLine line1 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - DIF_BRANCH * i, 
+			getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH + BRANCH_WIDTH_DIF * i , getHeight() - WOOD_HEIGHT - FIRST_BRANCH_HEIGHT * i + DIF_BRANCH * i);
+	add (line1);
+	GLine line2 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH + BRANCH_WIDTH_DIF * i , getHeight() - WOOD_HEIGHT - FIRST_BRANCH_HEIGHT + DIF_BRANCH * i,
+			getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - FIRST_BRANCH_HEIGHT - FIRST_BRANCH_HEIGHT - FIRST_BRANCH_HEIGHT * i + DIF_BRANCH * i);
+	add (line2);
+}
+} */
