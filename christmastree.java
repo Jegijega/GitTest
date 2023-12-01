@@ -16,6 +16,6 @@ public class christmastree extends GraphicsProgram {
 		GRect woody = new GRect (WOOD_WIDTH, WOOD_HEIGHT);
 		add (woody, getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT);
 		woody.setFilled(true);
-		woody.setColor(Color.ORANGE);
+		woody.setColor(Color.MAGENTA);
 		}
 }
