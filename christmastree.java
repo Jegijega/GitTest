@@ -4,13 +4,14 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class christmastree extends GraphicsProgram {
-	private static final int HEIGHT = 300;
+	private static final int HEIGHT = 400;
 	private static final int N_OF_BRANCH = 10;
 	private static final int FIRST_BRANCH_WIDTH = 80;
 	private static final int BRANCH_WIDTH_DIF = FIRST_BRANCH_WIDTH / N_OF_BRANCH;
-	private static final int DIF_BRANCH = HEIGHT / N_OF_BRANCH ;
+	private static final int DIF_BRANCH = 15 ;
 	private static final int WOOD_HEIGHT = 50;
 	private static final int WOOD_WIDTH = 45;
+	private static final int FIRST_BRANCH_HEIGHT = HEIGHT / N_OF_BRANCH + DIF_BRANCH * 5;
 	public void run() {
 		drawWood();
 		drawLefthalf();
@@ -21,7 +22,7 @@ public class christmastree extends GraphicsProgram {
 					getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH + BRANCH_WIDTH_DIF * i , getHeight() - WOOD_HEIGHT - DIF_BRANCH * i);
 			add (line1);
 			GLine line2 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH + BRANCH_WIDTH_DIF * i , getHeight() - WOOD_HEIGHT - DIF_BRANCH * i,
-					getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - DIF_BRANCH - DIF_BRANCH * i);
+					getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - FIRST_BRANCH_HEIGHT - DIF_BRANCH * i);
 			add (line2);
 		}
 	}
