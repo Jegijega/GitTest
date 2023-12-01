@@ -20,7 +20,7 @@ public class christmastree extends GraphicsProgram {
 		for (int j = 0; j < N_OF_BRANCH; j++) {
 			GLine line11 = new GLine (getWidth() / 2 + WOOD_WIDTH / 2,getHeight() - WOOD_HEIGHT - DIF_BRANCH * j,
 					getWidth() / 2 + WOOD_WIDTH / 2 + FIRST_BRANCH_WIDTH - BRANCH_WIDTH_DIF * j, getHeight() - WOOD_HEIGHT - DIF_BRANCH * j);
-			
+			add(line11);
 		}		
 		
 	}
