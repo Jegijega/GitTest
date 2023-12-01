@@ -16,12 +16,14 @@ public class christmastree extends GraphicsProgram {
 		drawLefthalf();
 	}
 	private void drawLefthalf() {
-		GLine line1 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT, 
-				getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH , getHeight() - WOOD_HEIGHT );
-		add (line1);
-		GLine line2 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH , getHeight() - WOOD_HEIGHT,
-				getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - DIF_BRANCH);
-		add (line2);
+		for (int i = 0; i < N_OF_BRANCH; i++) {
+			GLine line1 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - DIF_BRANCH * i, 
+					getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH + BRANCH_WIDTH_DIF * i , getHeight() - WOOD_HEIGHT - DIF_BRANCH * i);
+			add (line1);
+			GLine line2 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH , getHeight() - WOOD_HEIGHT,
+					getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT - DIF_BRANCH);
+			add (line2);
+		}
 	}
 	private void drawWood() {
 		GRect woody = new GRect (WOOD_WIDTH, WOOD_HEIGHT);
