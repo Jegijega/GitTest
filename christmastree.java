@@ -17,7 +17,7 @@ public class christmastree extends GraphicsProgram {
 	}
 	private void drawLefthalf() {
 		GLine line1 = new GLine (getWidth() / 2 - WOOD_WIDTH / 2, getHeight() - WOOD_HEIGHT, getWidth() / 2 - WOOD_WIDTH / 2 - FIRST_BRANCH_WIDTH , getHeight() - WOOD_HEIGHT );
-		
+		add (line1);
 	}
 	private void drawWood() {
 		GRect woody = new GRect (WOOD_WIDTH, WOOD_HEIGHT);
