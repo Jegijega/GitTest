@@ -11,10 +11,18 @@ public class christmastree extends GraphicsProgram {
 	private static final int DIF_BRANCH = 35 ;
 	private static final int WOOD_HEIGHT = 50;
 	private static final int WOOD_WIDTH = 45;
-	private static final int FIRST_BRANCH_HEIGHT = HEIGHT / N_OF_BRANCH + DIF_BRANCH * 5;
 	public void run() {
 		drawWood();
 		drawLefthalf();
+		drawRighthalf();
+	}
+	private void drawRighthalf() {
+		for (int j = 0; j < N_OF_BRANCH; j++) {
+			GLine line11 = new GLine (getWidth() / 2 + WOOD_WIDTH / 2,getHeight() - WOOD_HEIGHT - DIF_BRANCH * j,
+					getWidth() / 2 + WOOD_WIDTH / 2 + FIRST_BRANCH_WIDTH - BRANCH_WIDTH_DIF * j, getHeight() - WOOD_HEIGHT - DIF_BRANCH * j);
+			
+		}		
+		
 	}
 	private void drawLefthalf() {
 		for (int i = 0; i < N_OF_BRANCH; i++) {
