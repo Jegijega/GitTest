@@ -22,7 +22,8 @@ public class christmastree extends GraphicsProgram {
 					getWidth() / 2 + WOOD_WIDTH / 2 + FIRST_BRANCH_WIDTH - BRANCH_WIDTH_DIF * j, getHeight() - WOOD_HEIGHT - DIF_BRANCH * j);
 			add(line11);
 			GLine line21 = new GLine (getWidth() / 2 + WOOD_WIDTH / 2 + FIRST_BRANCH_WIDTH - BRANCH_WIDTH_DIF * j, getHeight() - WOOD_HEIGHT - DIF_BRANCH * j,
-					getWidth() / 2 + WOOD_WIDTH / 2 + FIRST_BRANCH_WIDTH - BRANCH_WIDTH_DIF * j, getHeight() - WOOD_HEIGHT - DIF_BRANCH * j - DIF_BRANCH);
+					getWidth() / 2 + WOOD_WIDTH / 2 - BRANCH_WIDTH_DIF * j,
+					getHeight() - WOOD_HEIGHT - DIF_BRANCH * j - DIF_BRANCH);
 			add(line21);
 		}		
 		
