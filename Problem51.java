@@ -6,7 +6,11 @@ public class Problem51 extends ConsoleProgram{
 		for(int i = 0; i < a.length(); i++){
 			for(int j = 0; j < a.length(); j++){
 				if(a.charAt(i) == a.charAt(j)){
-					a = a.substring(0, j) + a.substring(j + 1);
+					if(j == 0){
+						a = a.substring(1);
+					}else{
+						a = a.substring(0, j) + a.substring(j + 1);
+					}
 				}
 			}
 		}
