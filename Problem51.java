@@ -4,7 +4,7 @@ public class Problem51 extends ConsoleProgram{
 	public void run(){
 		String a = readLine("Enter String: ");
 		for(int i = 0; i < a.length(); i++){
-			for(int j = i; j < a.length(); j++){
+			for(int j = i + 1; j < a.length(); j++){
 				if(a.charAt(i) == a.charAt(j)){
 					if(j == 0){
 						a = a.substring(1);
