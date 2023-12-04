@@ -10,5 +10,6 @@ public class Problem51 extends ConsoleProgram{
 				}
 			}
 		}
+		println(a);
 	}
 }
