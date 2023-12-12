@@ -16,10 +16,12 @@ public class Problem52 extends ConsoleProgram{
 		}catch(IOException e){
 			e.getStackTrace();
 		}finally{
-			try {
-				rd.close();
-			} catch (IOException e) {
-				e.printStackTrace();
+			if(rd != null){
+				try{
+					rd.close();
+				}catch(IOException e){
+					e.printStackTrace();
+				}
 			}
 		}
 	}
