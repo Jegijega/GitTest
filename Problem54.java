@@ -25,6 +25,7 @@ public class Problem54 extends ConsoleProgram{
 			max1 = arr[1];
 			max2 = arr[0];
 		}
+		
 		 
 		for(int i = 2; i < arr.length; i++){
 			if(arr[i] > max1){
