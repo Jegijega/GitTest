@@ -44,8 +44,6 @@ public class Problem53 extends ConsoleProgram {
 		return token.countTokens();
 	}
 
-
-
 	private BufferedReader openFileReader(String prompt) {
 		BufferedReader rd = null;
 		while (rd == null) {
