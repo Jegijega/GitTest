@@ -1,4 +1,3 @@
-package worlds;
 
 import acm.program.ConsoleProgram;
 
