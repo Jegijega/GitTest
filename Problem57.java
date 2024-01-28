@@ -8,6 +8,7 @@ import acm.program.ConsoleProgram;
 //შემდეგ შეადარეთ ერთმანეთს მასივები.
 
 public class Problem57 extends ConsoleProgram{
+	private int[] array1;
 	public void run(){
 		String word1 = readLine("enter word ");
 		String word2 = readLine("enter word ");
@@ -15,7 +16,7 @@ public class Problem57 extends ConsoleProgram{
 	}
 
 	private boolean anagram(String word1, String word2) {
-		int[] array1 = new int[26];
+		array1 = new int[26];
 		for(int i = 0; i < 26; i++){
 			int count = 0;
 			for(int j = 0; j < word1.length(); j++){
