@@ -18,7 +18,7 @@ public class Problem57 extends ConsoleProgram{
 		int[] array1= new int[26];
 		for(int i = 0; i < 26; i++){
 			int count = 0;
-			for(int j = 0; j <= word1.length(); j++){
+			for(int j = 0; j < word1.length(); j++){
 				if('a' + j == word1.charAt(i)){
 					count++;
 				}
@@ -28,7 +28,7 @@ public class Problem57 extends ConsoleProgram{
 		int[] array2= new int[26];
 		for(int i = 0; i < 26; i++){
 			int count = 0;
-			for(int j = 0; j <= word2.length(); j++){
+			for(int j = 0; j < word2.length(); j++){
 				if('a' + 0 == word2.charAt(i) + 0){
 					count++;
 				}
