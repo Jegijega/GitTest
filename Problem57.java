@@ -9,6 +9,7 @@ import acm.program.ConsoleProgram;
 
 public class Problem57 extends ConsoleProgram{
 	private int[] array1;
+	private int[] array2;
 	public void run(){
 		String word1 = readLine("enter word ");
 		String word2 = readLine("enter word ");
@@ -26,7 +27,7 @@ public class Problem57 extends ConsoleProgram{
 			}
 			array1[i] = count;
 		}
-		int[] array2 = new int[26];
+		array2 = new int[26];
 		for(int i = 0; i < 26; i++){
 			int count = 0;
 			for(int j = 0; j < word2.length(); j++){
