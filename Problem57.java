@@ -15,7 +15,7 @@ public class Problem57 extends ConsoleProgram{
 	}
 
 	private boolean anagram(String word1, String word2) {
-		int[] array1= new int[26];
+		int[] array1 = new int[26];
 		for(int i = 0; i < 26; i++){
 			int count = 0;
 			for(int j = 0; j < word1.length(); j++){
@@ -25,7 +25,7 @@ public class Problem57 extends ConsoleProgram{
 			}
 			array1[i] = count;
 		}
-		int[] array2= new int[26];
+		int[] array2 = new int[26];
 		for(int i = 0; i < 26; i++){
 			int count = 0;
 			for(int j = 0; j < word2.length(); j++){
