@@ -19,9 +19,10 @@ public class Problem57 extends ConsoleProgram{
 		for(int i = 0; i < 26; i++){
 			int count = 0;
 			for(int j = 0; j < word1.length(); j++){
-				if('a' + j == word1.charAt(i)){
-					count++;
-				}
+				
+//				if( == word1.charAt(i)){
+//					count++;
+//				}
 			}
 			array1[i] = count;
 		}
