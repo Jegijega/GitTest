@@ -19,10 +19,9 @@ public class Problem57 extends ConsoleProgram{
 		for(int i = 0; i < 26; i++){
 			int count = 0;
 			for(int j = 0; j < word1.length(); j++){
-				
-//				if( == word1.charAt(i)){
-//					count++;
-//				}
+				if((int)'a' + i == (int)word1.charAt(i)){
+					count++;
+				}
 			}
 			array1[i] = count;
 		}
@@ -30,11 +29,11 @@ public class Problem57 extends ConsoleProgram{
 		for(int i = 0; i < 26; i++){
 			int count = 0;
 			for(int j = 0; j < word2.length(); j++){
-				if('a' + 0 == word2.charAt(i) + 0){
+				if((int)'a' + i == (int)word2.charAt(i)){
 					count++;
 				}
 			}
-			array1[i] = count;
+			array2[i] = count;
 		}
 		for(int i = 0; i < 26; i++){
 			if(array1[i] != array2[i]){
