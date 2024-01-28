@@ -21,7 +21,7 @@ public class Problem57 extends ConsoleProgram{
 		for(int i = 0; i < 26; i++){
 			int count = 0;
 			for(int j = 0; j < word1.length(); j++){
-				if(((int)'a' + i) == (int)(word1.charAt(i))){
+				if((int)'a' + i == (int)word1.charAt(i)){
 					count++;
 				}
 			}
