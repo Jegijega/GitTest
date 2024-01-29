@@ -8,7 +8,7 @@ public class Problem64 extends ConsoleProgram{
 	public void run(){
 		String name1 = readLine("Enter first name: ");
 		String name2 = readLine("Enter second name: ");
-		while(!name1.equals("") || !name2.equals("")){
+		while(!name1.equals("") && !name2.equals("")){
 			if(!map.containsKey(name1)){
 				ArrayList<String> arr = new ArrayList<String>();
 				arr.add(name2);
