@@ -34,7 +34,7 @@ public class Problem66 extends ConsoleProgram {
 					}
 				}
 				if(finding){
-					println(map.get(key) + ", " + array.get(j));	
+					println(key + ", " + array.get(j));	
 				}
 			}
 		}
