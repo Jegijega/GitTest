@@ -10,6 +10,7 @@ import acm.program.ConsoleProgram;
 public class Problem57 extends ConsoleProgram{
 	private int[] array1;
 	private int[] array2;
+	
 	public void run(){
 		String word1 = readLine("enter word ");
 		String word2 = readLine("enter word ");
