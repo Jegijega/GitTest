@@ -33,7 +33,7 @@ public class Problem66 extends ConsoleProgram {
 						finding = false;
 					}
 				}
-			println(map.get(key) + ", " + array.get(j));	
+				println(map.get(key) + ", " + array.get(j));	
 			}
 		}
 	}
