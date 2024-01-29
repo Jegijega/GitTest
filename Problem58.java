@@ -17,7 +17,7 @@ public class Problem58 extends ConsoleProgram {
 						}
 					}
 				}
-				if(unique > 1){
+				if(unique = 1){
 					count++;
 				}
 			}
