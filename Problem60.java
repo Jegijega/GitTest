@@ -10,7 +10,6 @@ public class Problem60 extends ConsoleProgram{
 			num = readInt("Enter number: ");
 			list.add(num);
 		}
-		print(-1);
 		for(int i = list.size() - 1; i >= 0; i--){
 			print(" " + list.get(i));
 		}
