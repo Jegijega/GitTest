@@ -29,7 +29,7 @@ public class Problem66 extends ConsoleProgram {
 			boolean finding = true;
 			for (int j = 0; j < array.size(); j++) {
 				for (int i = 0; i < map.get(key).size(); i++) {
-					for (int l = 0; l < array.get(j).length(); l++) {
+					for (int l = 0; l < map.get(array.get(j)).size(); l++) {
 						if (map.get(key).get(i).equals(map.get(array.get(j)).get(l))) {
 							finding = false;
 						}
