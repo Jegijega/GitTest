@@ -14,6 +14,9 @@ public class Problem63 extends ConsoleProgram{
 				map.replace(name1, map.get(name1) + 1);
 			}
 			name1 = readLine("Enter first name: ");
+			if(name1.equals("")){
+				break;
+			}
 			name2 = readLine("Enter second name: ");
 		}
 		int most = 0;
@@ -24,5 +27,6 @@ public class Problem63 extends ConsoleProgram{
 				outgoing = key;
 			}
 		}
+		println(outgoing + "--" + most);
 	}
 }
