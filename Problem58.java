@@ -9,15 +9,15 @@ public class Problem58 extends ConsoleProgram {
 		for(int i = 0; i < n; i++){
 			for(int j = 0; j < n; j++){
 				matr[i][j] = readInt("Enter value of(" + i + "," + j + ")");
-				boolean unique = true;
+				int unique = 0;
 				for(int k = 0; k < n; k++){
 					for(int m = 0; m < n; m++){
 						if(matr[i][j] == matr[k][m]){
-							unique = false;
+							unique++;
 						}
 					}
 				}
-				if(unique){
+				if(unique > 1){
 					count++;
 				}
 			}
