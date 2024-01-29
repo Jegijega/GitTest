@@ -8,7 +8,7 @@ public class Problem59 extends ConsoleProgram{
 		matr = new int[n][m];
 		int ans = 0;
 		for(int i = 0; i < n; i++){
-			for(int j = 0; j < n; j++){
+			for(int j = 0; j < m; j++){
 				matr[i][j] = readInt("Enter value of(" + i + "," + j + ")");
 			}
 		}
