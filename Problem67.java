@@ -18,7 +18,7 @@ public class Problem67 extends Program {
 			if(e.getSource() == field){
 				try{
 					GImage image = new GImage (e.getActionCommand());
-					add(image, CENTER);
+//					add(image, CENTER);
 				}catch(ErrorException ex){
 					println("no such image");
 				}
