@@ -3,8 +3,8 @@ import acm.program.ConsoleProgram;
 public class Problem59 extends ConsoleProgram{
 	private int[][] matr;
 	public void run() {
-		int n = readInt("Enter rows ");
-		int m = readInt("Enter columns ");
+		int n = readInt("Enter columns ");
+		int m = readInt("Enter rows ");
 		matr = new int[n][m];
 		int ans = 0;
 		for(int i = 0; i < n; i++){
@@ -49,10 +49,3 @@ public class Problem59 extends ConsoleProgram{
 		println(ans);
 	}	
 }
-
-//0000000
-//0001110
-//1101100
-//1000110
-//1111111
-//0101010
