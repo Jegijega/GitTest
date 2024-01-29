@@ -3,8 +3,9 @@ import java.util.HashMap;
 
 import acm.program.ConsoleProgram;
 
-public class Problem64 extends ConsoleProgram{
+public class Problem64 extends ConsoleProgram {
 	private HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
+
 	public void run(){
 		String name1 = readLine("Enter first name: ");
 		String name2 = readLine("Enter second name: ");
@@ -23,7 +24,12 @@ public class Problem64 extends ConsoleProgram{
 			name2 = readLine("Enter second name: ");
 		}
 		for(String key : map.keySet()){
-			println(key + ": " + map.get(key).toString());
+			String friends = "";
+			for(int i = 0; i < map.get(key).size() - 1; i++){
+				friends += map.get(key).get(i) + ", ";
+			}
+			friends += map.get(key).get(map.get(key).size() - 1);
+			println(key + ": " + friends);
 		}
 	}
 }
