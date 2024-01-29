@@ -7,6 +7,7 @@ public class Problem62 extends ConsoleProgram{
 	public void run(){
 		String name = readLine("Enter name: ");
 		while(!name.equals("")){
+			print(1);
 			if(!map.containsKey(name)){
 				map.put(name, 1);
 			}else{
