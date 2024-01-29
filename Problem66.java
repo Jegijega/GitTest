@@ -29,12 +29,14 @@ public class Problem66 extends ConsoleProgram {
 			boolean finding = true;
 			for (int j = 0; j < array.size(); j++) {
 				for (int i = 0; i < map.get(key).size(); i++) {
-					if(map.get(key).get(i).equals(array.get(j))){
-						finding = false;
+					for (int l = 0; l < array.get(j).length(); l++) {
+						if (map.get(key).get(i).equals(map.get(array.get(j)).get(l))) {
+							finding = false;
+						}
 					}
 				}
-				if(finding){
-					println(key + ", " + array.get(j));	
+				if (finding) {
+					println(key + ", " + array.get(j));
 				}
 			}
 		}
