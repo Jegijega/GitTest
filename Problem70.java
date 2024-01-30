@@ -4,13 +4,10 @@ import java.awt.event.ComponentListener;
 import acm.graphics.GLine;
 import acm.program.GraphicsProgram;
 
-public class Problem70 extends GraphicsProgram{
+public class Problem70 extends GraphicsProgram implements ComponentListener{
 	public void run(){
 		update();
-		addComponentListeners(this);
-	}
-	public void ComponentResized(ComponentEvent e){
-		update();
+		addComponentListener(this);
 	}
 
 	private void update() {
@@ -23,5 +20,25 @@ public class Problem70 extends GraphicsProgram{
 			GLine line = new GLine( 0, i * getHeight() / 10, getWidth(), i * getHeight() / 10);
 			add(line);
 		}
+	}
+	@Override
+	public void componentHidden(ComponentEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void componentMoved(ComponentEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void componentResized(ComponentEvent e) {
+		update();
+		
+	}
+	@Override
+	public void componentShown(ComponentEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
