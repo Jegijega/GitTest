@@ -4,8 +4,9 @@ import javax.swing.*;
 
 import acm.graphics.GLabel;
 import acm.program.GraphicsProgram;
+import acm.program.Program;
 
-public class Problem68 extends GraphicsProgram{
+public class Problem68 extends Program{
 	private JTextField field;
 	private JButton button;
 	public void run(){
