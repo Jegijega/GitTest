@@ -1,8 +1,15 @@
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+
 import acm.graphics.GLine;
 import acm.program.GraphicsProgram;
 
 public class Problem70 extends GraphicsProgram{
 	public void run(){
+		update();
+		addComponentListener((ComponentListener) this);
+	}
+	public void ComponentResized(ComponentEvent e){
 		update();
 	}
 
