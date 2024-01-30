@@ -7,7 +7,7 @@ import acm.program.GraphicsProgram;
 public class Problem70 extends GraphicsProgram{
 	public void run(){
 		update();
-		addComponentListener((ComponentListener) this);
+		addComponentListeners(this);
 	}
 	public void ComponentResized(ComponentEvent e){
 		update();
