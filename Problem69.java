@@ -12,6 +12,7 @@ public class Problem69 extends GraphicsProgram{
 			list.add(label);
 			for(int j = 0; j < list.size(); j++){
 				list.get(j).move(0, -10);
+				pause(10);
 			}
 		}
 	}
