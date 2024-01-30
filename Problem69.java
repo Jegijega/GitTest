@@ -12,6 +12,9 @@ public class Problem69 extends GraphicsProgram{
 			list.add(label);
 			for(int j = 0; j < list.size(); j++){
 				list.get(j).move(0, -20);
+				if(getElementAt(getWidth() / 2, getHeight() / 2) != null){
+					getElementAt(getWidth() / 2, getHeight() / 2).setVisible(false);;
+				}
 				pause(10);
 			}
 		}
